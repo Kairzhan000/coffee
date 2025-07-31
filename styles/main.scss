@@ -1,0 +1,9 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use './blocks/main';
+@use './blocks/header';
+@use './blocks/home';

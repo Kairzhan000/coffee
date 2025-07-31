@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/output.css">
-    <title>COFFEE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COFFEE</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        
-    </header>
+  <header class="header text-white">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__inner_logo text-white logo">
+          coffeelife
+        </div>
+        <div class="header__inner_menu">
+          <ul class="header__inner_menu_main text-white">
+            <li><a href="#" class="header__inner_menu_main_link link">HOME</a></li>
+            <li><a href="#" class="header__inner_menu_main_link link">COFFEE</a></li>
+            <li><a href="#" class="header__inner_menu_main_link link">DESSERT</a></li>
+            <li><a href="#" class="header__inner_menu_main_link link">LEMONADES</a></li>
+          </ul>
+        </div>
+        <div class="header__inner_right">
+          <div class="header__inner_right_basket">
+            <img src="./images/basket.png" alt="basket" />
+          </div>
+          <div class="header__inner_right_burger burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Мобильное меню -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">COFFEE</a></li>
+          <li><a href="#">DESSERT</a></li>
+          <li><a href="#">LEMONADES</a></li>
+        </ul>
+      </div>
+      <!-- Затемнение -->
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      <div class="home">
+        <div class="home__inner">
+          <div class="home__inner_top">
+            <div class="home__inner_top_title">
+              WELCOME
+            </div>
+            <div class="home__inner_top_main">
+              Your daily dose <br />
+              of comfort and <br />
+              coffee
+            </div>
+            <div class="home__inner_top_info">
+              Come in, we’ve been expecting you
+            </div>
+          </div>
+          <div class="home__inner_bottom">
+            <button>
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
 </html>

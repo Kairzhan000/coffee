@@ -2,5 +2,26 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
-  }
+  },
+  "name": "coffee-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.80.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch":"sass --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kairzhan000/coffee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kairzhan000/coffee/issues"
+  },
+  "homepage": "https://github.com/Kairzhan000/coffee#readme",
+  "description": ""
 }

@@ -1,0 +1,94 @@
+@use '../helpers' as *;
+
+.home {
+  display: flex;
+  align-items: center;      // вертикальное центрирование
+  min-height: 100vh;        // растягиваем на всю высоту экрана
+
+  @include tablet {
+    justify-content: center;     // горизонтальное центрирование
+    text-align: center;          // текст по центру
+
+    &__inner {
+      padding-left: 0;           // убираем отступ
+      align-items: center;       // центрируем вложенные элементы
+    }
+  }
+
+  &__inner {
+    padding-left: 100px;      // отступ слева на десктопе
+    display: flex;
+    flex-direction: column;
+    gap: rem(56);
+    @include tablet{
+      padding-left: 0;
+    }
+
+    &_top {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(40);
+
+      &_title {
+        font-size: rem(20);
+        font-family: 'Outfit';
+        font-weight: bold;
+        letter-spacing: rem(4);
+      }
+
+      &_main {
+        font-size: rem(72);
+        font-weight: bold;
+        font-family: 'Playfair Display', serif;
+        text-shadow:
+          1px 1px 2px rgba(0, 0, 0, 0.9),
+          -1px -1px 2px rgba(0, 0, 0, 0.9),
+          0 0 5px rgba(30, 25, 20, 0.7);
+        @include mobile{
+          font-size: rem(40);
+          line-height: rem(76);
+          letter-spacing: rem(4);
+        }
+      }
+
+      &_info {
+        font-size: rem(20);
+        font-family: 'Outfit';
+      }
+    }
+
+    &_bottom {
+      button {
+        background-color: #ffffff;
+        color: #30261C;
+        border-radius: rem(40);
+        padding: rem(16) rem(40);
+        font-size: rem(18);
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        border: 2px solid #30261C;
+        cursor: pointer;
+
+        transition:
+          background-color 0.4s ease,
+          color 0.4s ease,
+          box-shadow 0.4s ease;
+
+        box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.08);
+
+        &:hover {
+          background-color: #ede3da;
+          color: #1f1a15;
+          box-shadow:
+            0 6px 14px rgba(48, 38, 28, 0.2),
+            inset 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        &:focus-visible {
+          outline: 2px solid #cbb6a0;
+          outline-offset: 3px;
+        }
+      }
+    }
+  }
+}
