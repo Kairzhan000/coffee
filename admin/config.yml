@@ -1,18 +1,36 @@
-backend:
-  name: git-gateway
-  branch: main
+# backend:
+#   name: git-gateway
+#   branch: main
 
-media_folder: "images"
-public_folder: "/images"
+# media_folder: "images"
+# public_folder: "/images"
+
+# collections:
+#   - name: "drinks"
+#     label: "Меню - Напитки"
+#     folder: "content/drinks"
+#     create: true
+#     slug: "{{slug}}"
+#     fields:
+#       - { label: "Название", name: "title", widget: "string" }
+#       - { label: "Цена", name: "price", widget: "string" }
+#       - { label: "Описание", name: "description", widget: "text" }
+#       - { label: "Изображение", name: "image", widget: "image" }
+backend:
+  name: test-repo
+  login: false
+
+media_folder: "content/assets"
+public_folder: "/assets"
 
 collections:
   - name: "drinks"
-    label: "Меню - Напитки"
+    label: "Drinks"
     folder: "content/drinks"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Название", name: "title", widget: "string" }
-      - { label: "Цена", name: "price", widget: "string" }
-      - { label: "Описание", name: "description", widget: "text" }
-      - { label: "Изображение", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "string" }
