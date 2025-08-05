@@ -2,26 +2,24 @@
 
 .home {
   display: flex;
-  align-items: center;      // вертикальное центрирование
-  min-height: 100vh;        // растягиваем на всю высоту экрана
-
-  @include tablet {
-    justify-content: center;     // горизонтальное центрирование
-    text-align: center;          // текст по центру
-
-    &__inner {
-      padding-left: 0;           // убираем отступ
-      align-items: center;       // центрируем вложенные элементы
-    }
-  }
+  align-items: center;          // вертикальное центрирование
+  justify-content: center;      // горизонтальное центрирование
+  min-height: 100vh;
+  width: 100%;
 
   &__inner {
-    padding-left: 100px;      // отступ слева на десктопе
     display: flex;
     flex-direction: column;
     gap: rem(56);
-    @include tablet{
+    padding-left: rem(50);
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+
+    @include tablet {
       padding-left: 0;
+      align-items: center;
+      text-align: center;
     }
 
     &_top {
@@ -44,7 +42,8 @@
           1px 1px 2px rgba(0, 0, 0, 0.9),
           -1px -1px 2px rgba(0, 0, 0, 0.9),
           0 0 5px rgba(30, 25, 20, 0.7);
-        @include mobile{
+
+        @include mobile {
           font-size: rem(40);
           line-height: rem(76);
           letter-spacing: rem(4);
