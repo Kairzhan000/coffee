@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="./src/output.css" />
   <link rel="stylesheet" href="./styles/main.css" />
   <script src="./scripts/main.js" defer></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body>
   <header class="header text-white">
@@ -95,12 +97,391 @@
         </ul>
     </div>
   </div>
+  <div class="coffee space-y-[50px]"></div>
+    <div class="coffee_hot">
+        <div class="coffee_hot_title">OUR HOT COFFEE</div>
 
-    <main class="menu-section">
-    <div class="container">
-        <h2 class="menu-section__title">Наше меню</h2>
-        <div id="coffeeCards" class="coffee-cards"></div>
+        <div class="coffee_hot__inner_section swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/coffe-hot-c.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Capuccino
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Rich espresso, creamy milk, and velvety foam in perfect harmony.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/expresso.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Expresso
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Bold, intense, and pure coffee in its simplest form.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Latte.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Latte
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Smooth espresso blended with steamed milk for a light.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- Добавь больше слайдов по необходимости -->
+             
+            </div>
+
+            <!-- Пагинация и стрелки -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="coffee_hot">
+        <div class="coffee_hot_title">OUR ICE COFFEE</div>
+
+        <div class="coffee_hot__inner_section swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Dark-Chocolate.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Iced chocolate
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                  Rich espresso, creamy milk, and velvety foam in perfect harmony.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Frappe.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Frappe
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Bold, intense, and pure coffee in its simplest form.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Fredo.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Fredo
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Smooth espresso blended with steamed milk for a light.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- Добавь больше слайдов по необходимости -->
+             
+            </div>
+
+            <!-- Пагинация и стрелки -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="coffee_hot">
+        <div class="coffee_hot_title">OUR DESSERT</div>
+
+        <div class="coffee_hot__inner_section swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Croassan.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Croassan
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Rich espresso, creamy milk, and velvety foam in perfect harmony.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Cookie.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Cookie
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Bold, intense, and pure coffee in its simplest form.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Ekler.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Ekler
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Smooth espresso blended with steamed milk for a light.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- Добавь больше слайдов по необходимости -->
+             
+            </div>
+
+            <!-- Пагинация и стрелки -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="coffee_hot">
+        <div class="coffee_hot_title">OUR LEMONADES</div>
+
+        <div class="coffee_hot__inner_section swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Classic.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Classic
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Rich espresso, creamy milk, and velvety foam in perfect harmony.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Pink.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Pink
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Bold, intense, and pure coffee in its simplest form.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee_hot__inner_section_type">
+                    <div class="coffee_hot__inner_section_type_img">
+                        <img src="./images/Apple.png" alt="">
+                    </div>
+                    <div class="coffee_hot__inner_section_type_main">
+                        <div class="coffee_hot__inner_section_type_main_top">
+                            <div class="coffee_hot__inner_section_type_main_top_title">
+                                Apple
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_top_info">
+                                 Smooth espresso blended with steamed milk for a light.
+                            </div>
+                        </div>
+                        <div class="coffee_hot__inner_section_type_main_bottom">
+                            <div class="coffee_hot__inner_section_type_main_bottom_size">
+                                ml.200
+                            </div>
+                            <div class="coffee_hot__inner_section_type_main_bottom_order">
+                                Order Now
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- Добавь больше слайдов по необходимости -->
+             
+            </div>
+
+            <!-- Пагинация и стрелки -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
-    </main>
+
+<button id="toggleFooterBtn" class="toggle-footer-btn">
+  ↑ Menu
+</button>
+
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__inner__logo">coffeelife</div>
+    <nav class="footer__inner__nav">
+      <a href="#">Home</a>
+      <a href="#">Coffee</a>
+      <a href="#">Dessert</a>
+      <a href="#">Lemonades</a>
+    </nav>
+    <div class="footer__inner__contacts">
+      <p>123 Coffee St., Brewtown</p>
+      <p>Phone: +1 234 567 890</p>
+      <p>Email: contact@coffeelife.com</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    © 2025 coffeelife. All rights reserved.
+  </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

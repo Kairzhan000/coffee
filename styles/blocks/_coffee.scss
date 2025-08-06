@@ -1,0 +1,139 @@
+@use '../helpers' as *;
+
+.coffee_hot {
+  max-width: rem(1440);
+  margin: 0 auto;
+  padding-inline: rem(16);
+  text-align: center;
+
+  &_title {
+    font-size: rem(32);
+    padding-top: rem(50);
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: #30261C;
+
+    @include mobile {
+      font-size: rem(24);
+      padding-top: rem(32);
+    }
+  }
+
+  &__inner_section {
+    margin-top: rem(32);
+
+    .swiper-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: rem(20);
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__inner_section_type {
+    height: rem(450);
+    padding: rem(16);
+    border: rem(1) solid #E2D9C8;
+    background-color: #faf7ef;
+    border-radius: rem(8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16);
+    position: relative;
+
+    @include tablet {
+      height: auto;
+      padding-bottom: rem(80); // учитываем кнопку
+    }
+
+    &_main {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(12);
+
+      &_top {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(2);
+
+        &_title {
+          font-size: rem(28);
+          font-weight: 600;
+          font-family: 'Outfit';
+          color: #30261C;
+
+          @include mobile {
+            font-size: rem(22);
+          }
+        }
+
+        &_info {
+          font-size: rem(18);
+          font-family: 'Outfit';
+          color: #2A0000;
+
+          @include mobile {
+            font-size: rem(16);
+          }
+        }
+      }
+
+      &_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: rem(16);
+        gap: rem(70);
+
+        @include tablet {
+          position: static;
+          margin-top: rem(16);
+          gap: rem(20);
+        }
+
+        &_size {
+          font-size: rem(20);
+          color: #2A0000;
+          font-weight: 600;
+          font-family: 'Poppins';
+
+          @include mobile {
+            font-size: rem(16);
+          }
+        }
+
+        &_order {
+          background-color: #2A0000;
+          padding: rem(10) rem(26);
+          font-size: rem(14);
+          color: white;
+          font-family: 'Poppins';
+          border-radius: rem(8);
+
+          @include mobile {
+            font-size: rem(12);
+            padding: rem(8) rem(20);
+          }
+        }
+      }
+    }
+
+    &_img img {
+      width: 100%;
+      height: auto;
+      max-height: rem(200);
+      object-fit: contain;
+
+      @include mobile {
+        max-height: rem(160);
+      }
+    }
+  }
+}
