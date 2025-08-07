@@ -3,8 +3,9 @@
 .coffee_hot {
   max-width: rem(1440);
   margin: 0 auto;
-  padding-inline: rem(16);
+  padding-inline: rem(8);
   text-align: center;
+  margin-bottom: rem(50);
 
   &_title {
     font-size: rem(32);
@@ -49,7 +50,7 @@
 
     @include tablet {
       height: auto;
-      padding-bottom: rem(80); // учитываем кнопку
+      padding-bottom: rem(30); // учитываем кнопку
     }
 
     &_main {
